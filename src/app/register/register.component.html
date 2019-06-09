@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="container mt-5">
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <h3 class="mb-3">Register</h3>
+    <input type="text" formControlName="firstname" placeholder="First Name"><br>
+    <input type="text" formControlName="lastname" placeholder="Last Name"><br>
+    <input type="text" formControlName="addressline" placeholder="Addressline"><br>
+    <input type="text" formControlName="zipcode" placeholder="Zip Code"><br>
+    <input type="text" formControlName="city" placeholder="City"><br>
+    <input type="text" formControlName="country" placeholder="Country"><br>
+
+    <input type="text" formControlName="email" placeholder="Email address"><br>
+    <input type="password" formControlName="password" placeholder="Password"><br>
+    <br><br>
+    <input type="submit" value="Register">
+  </form>
+</div>
